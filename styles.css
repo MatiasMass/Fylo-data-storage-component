@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+  --dark-blue: hsl(228, 56%, 26%);
+  --very-dark-blue: hsl(229, 57%, 11%);
+}
+
+body{
+    font-size: 15px;
+    background-color: black;
+    background: url('/images/bg-desktop.png'), hsl(229, 57%, 11%);
+    /* background: url('https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/uja7och1qxswpbietazs.jpg'); */
+    background-size: cover;
+    /* background-position: center, top; */
+    /* background-repeat: no-repeat; */
+    /* background-position: ; */
+    background-attachment: fixed;
+    /* background-position: ; */
+}
+
+.container{
+    width: 80%;
+    margin: 30vh auto;
+    display: flex;
+}
+
+.fylo{
+    margin-left: auto;
+    width: 30%;
+    height: 150px;
+    padding: 35px;
+    background-color: var(--dark-blue);
+    border-radius: 10px 70px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: space-around;
+}
+
+.fylo .image-fylo img{
+    margin-top: 10px;
+    height: 70%;
+}
+
+.fylo .images img{
+    background-color: var(--very-dark-blue);
+    height: 40px; 
+    width: 40px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.inner-container{
+    align-self: flex-end;
+    width: 50%;
+    height: 120px;
+    margin-left: 20px;
+    margin-right: auto;
+    background-color: var(--dark-blue);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.bar{
+  height: 20px;
+  width: 80%;
+  background-color: hsl(229, 57%, 11%);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.bar .inner-bar{
+  background: rgb(205,78,195);
+  background: linear-gradient(75deg, rgba(205,78,195,1) 0%, rgba(255,0,80,1) 100%); 
+  width: 80%;
+  margin-left: 5px;
+  display: flex;
+  justify-content: end;
+  border-radius: 5px;
+  padding: 1px;
+}
+
+.bar .inner-bar .circle{
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
